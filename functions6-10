@@ -1,0 +1,245 @@
+#include "1.h"
+#include <stdio.h>
+#include <math.h>
+
+//ElectricField
+double BottomNumber1 = 1.6;
+double Index1 = -19;
+double e = BottomNumber1 * (10 ^ Index1);
+double BottomNumber2 = 9;
+double Index2 = 9;
+double k = BottomNumber2 * (10 ^ Index2);
+
+double CoulombsLaw () {
+    cout << "the function is used to caculate electric force";
+    double Q1, Q2,answer,r;
+    cout << "Please input the two electric charge Q1 Q2(unit:C) and the length r (unit:m) between them";
+    cout << "input Q1";
+    cin >> Q1;
+    cout << "input Q2";
+    cin >> Q2;
+    cout << "input r";
+    cin >> r;
+    answer = k * Q1 * Q2 / (r ^ 2);
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double ElectricStrengthDefination () {
+    cout << "the function is used to caculate Electric Strength";
+    double F,Q,answer;
+    cout << "Please input the electric force (unit:N) and the Field strength Q (unit:c)";
+    cout << "input F";
+    cin >> F;
+    cout << "input Q";
+    cin >> Q;
+    answer = F/Q ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double ElectricStrengthOfPointCharge () {
+    cout << "the function is used to caculate Electric Strength of Point charge";
+    double r,Q,answer;
+    cout << "Please input the distance r (unit:m) and the Field strength Q (unit:c)";
+    cout << "input r";
+    cin >> r;
+    cout << "input Q";
+    cin >> Q;
+    answer = k * Q / (r^2) ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double ElectricPotential () {
+    cout << "the function is used to caculate Electric Potential";
+    double e1,Q,answer;
+    cout << "Please input the Potential energy e1 (unit:V) and the Field strength Q (unit:c)";
+    cout << "input e1";
+    cin >> e1;
+    cout << "input Q";
+    cin >> Q;
+    answer = e1/Q ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double ElectricWork () {
+    cout << "the function is used to caculate Electric work";
+    double u,Q,answer;
+    cout << "Please input the Electric Potential difference u (unit:V) and the Field strength Q (unit:c)";
+    cout << "input u";
+    cin >> u;
+    cout << "input Q";
+    cin >> Q;
+    answer = u/Q ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+//magnetic field
+double MagneticForce () {
+    cout << "the function is used to caculate magnetic force";
+    double B,I,L,answer;
+    cout << "Please input the Electric Field power b (unit:T) the Current I (unit:A) and the length L (unit:m)" ;
+    cout << "input b";
+    cin >> B;
+    cout << "input I";
+    cin >> I;
+    cout << "input L";
+    cin >> L;
+    answer = B*I*L ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double MagneticFlux () {
+    cout << "the function is used to caculate magnetic flux";
+    double B,S,answer;
+    cout << "Please input the Electric Field power b (unit:T) and the square S (unit:m^2)" ;
+    cout << "input b";
+    cin >> B;
+    cout << "input S";
+    cin >> S;
+    answer = B*S ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double LorentzForce () {
+    cout << "the function is used to caculate Lorentz force";
+    double B,v,q,answer;
+    cout << "Please input the Electric Field power b (unit:T) Charge q (unit:C) and the speed v (unit:m/s)" ;
+    cout << "input b";
+    cin >> B;
+    cout << "input V";
+    cin >> v;
+    cout << "input q";
+    cin >> q;    
+    answer = B*v*q ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double ElectromagneticInductioLaw () {
+    cout << "the function is used to caculate electromagnetic";
+    double n,fai,t,answer;
+    cout << "Please input the number of circle n,delta fai (unit:C) and delta time t (unit:s)" ;
+    cout << "input n";
+    cin >> n;
+    cout << "input fai";
+    cin >> fai;
+    cout << "input t";
+    cin >> t;    
+    answer = n*fai/t ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+//Momentum theorem
+double MomentumTheorem () {
+    cout << "the function is used to explain MomentumTheorem";
+    double m,v1,v2,answer;
+    cout << "Please input the mass m(unit:kg),final speed v2 (unit:m/s) and first speed v1 (unit:m/s)" ;
+    cout << "input m";
+    cin >> m;
+    cout << "input v1";
+    cin >> v1;
+    cout << "input v2";
+    cin >> v2;    
+    answer = m*(v2-v1) ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double Impulse () {
+    cout << "the function is used to caculate Impulse";
+    double p1,p2,answer;
+    cout << "Please input the final momentum p1(unit:kg·m/s) and first momentum p2(unit:kg·m/s)" ;
+    cout << "input p1";
+    cin >> p1;
+    cout << "input p2";
+    cin >> p2;    
+    answer = p1-p2 ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+//Mechanical vibration
+double pai = 3.14;
+double g = 9.18;
+double Resilience () {
+    cout << "the function is used to caculate Resilience";
+    double k,x,answer;
+    cout << "Please input the Firmness factor k and length x(unit:m)" ;
+    cout << "input k";
+    cin >> k;
+    cout << "input x";
+    cin >> x;    
+    answer = 0-(k*x) ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double MechanicalAcceleration () {
+    cout << "the function is used to caculate Mechanical Acceleration";
+    double k,x,m,answer;
+    cout << "Please input the Firmness factor k,mass m(unit:kg) and length x(unit:m)" ;
+    cout << "input k";
+    cin >> k;
+    cout << "input x";
+    cin >> x;
+    cout << "input m";
+    cin >> m;
+    answer = 0-(k*x/m) ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double MechanicalCycle(){
+    cout << "the function is used to caculate Mechanical cycle";
+    double m,k,answer;
+    cout << "Please input the Firmness factor k and the mass m(unit:kg)" ;
+    cout << "input k";
+    cin >> k;
+    cout << "input m";
+    cin >> m;    
+    answer = 2*pai*(m/k)^(1/2) ;
+    cout << "your answer is:";
+    cout << answer;
+}
+
+double PendulumPeriod(){
+    cout << "the function is used to caculate the period of a Pendulum";
+    double l,answer;
+    cout << "Please input the length (unit:m)" ;
+    cout << "input l";
+    cin >> l;  
+    answer = 2*pai*(l/g)^(1/2) ;
+    cout << "your answer is:";
+    cout << answer;    
+}
+
+double wavelength(){
+    cout << "the function is used to caculate wavelength";
+    double lamda,T,answer;
+    cout << "Please input the lamda(unit:m) and the period T(unit:s)" ;
+    cout << "input lamda";
+    cin >> lamda;
+    cout << "input T";
+    cin >> T;    
+    answer = lamda/T ;
+    cout << "your answer is:";
+    cout << answer;   
+}
+
+double FrequencyConversion(){
+    cout << "the function is used to converse frequency and period";
+    double f;
+    cout << "Please input the frequency f" ;
+    cout << "input f";
+    cin >> f;
+    answer = 1/f ;
+    cout << "your answer is:";
+    cout << answer;   
+}
